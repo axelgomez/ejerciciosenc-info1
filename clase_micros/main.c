@@ -13,7 +13,6 @@ void main(void) {
 	ClearDisplay4(); //limpiamos la pantalla
 	while(1) {
 		n = Read_Switch(S2);
-		n = Lcd_7Segment(1);
 		n = Read_Preset(PRESET_R17);
 		n = Read_Sensor();
 		n = Line_Lcd4("  HAGO ELECTRONICA  ",2);
