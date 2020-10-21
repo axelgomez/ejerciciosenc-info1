@@ -31,11 +31,11 @@ int main(){
 	
 	// 1b transponer una matriz
 	int matriz[FILAS_MATRIZ][COLUMNAS_MATRIZ] = {{1,2},{3,4}};
-	int matriz_transpuesta[FILAS_MATRIZ][COLUMNAS_MATRIZ] = {0};
+	int matriz_traspuesta[FILAS_MATRIZ][COLUMNAS_MATRIZ] = {0};
 	
 	for (i = 0; i < FILAS_MATRIZ; i++){
 		for (j = 0; j < COLUMNAS_MATRIZ; j++){
-			matriz_transpuesta[i][j] = matriz[j][i];
+			matriz_traspuesta[i][j] = matriz[j][i];
 		}
 	}
 	
@@ -50,7 +50,7 @@ int main(){
 	printf("\nMatriz traspuesta: \n");
 	for (i = 0; i < FILAS_MATRIZ; i++){
 		for (j = 0; j < COLUMNAS_MATRIZ; j++){
-			printf("%d ", matriz_transpuesta[i][j]);
+			printf("%d ", matriz_traspuesta[i][j]);
 		}
 		printf("\n");
 	}
@@ -69,8 +69,8 @@ int main(){
 	}
 	printf("cuyo determinante es: %d\n", determinante);
 	
-	//opcional: hallar determinante de la matriz transpuesta
-	determinante = matriz_transpuesta[0][0]*matriz_transpuesta[1][1]-matriz_transpuesta[1][0]*matriz_transpuesta[0][1];
+	//opcional: hallar determinante de la matriz traspuesta
+	determinante = matriz_traspuesta[0][0]*matriz_traspuesta[1][1]-matriz_traspuesta[1][0]*matriz_traspuesta[0][1];
 	printf("siendo: %d, el determinante de su traspuesta\n", determinante);
 	//Importante: se puede verificar que ambos valores siempre coincidiran
 	
